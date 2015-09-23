@@ -18,15 +18,16 @@ var Keyboard = function()
 	this.KEY_W = 87;
 	this.KEY_SHIFT = 16;
 };
+
 Keyboard.prototype.onKeyDown = function(evt)
 {
-this.keys[evt.keyCode] = true;
+	this.keys[evt.keyCode] = true;
 };
 Keyboard.prototype.onKeyUp = function(evt)
 {
-this.keys[evt.keyCode] = false;
+	this.keys[evt.keyCode] = false;
 };
 Keyboard.prototype.isKeyDown = function(keyCode)
 {
-return this.keys[keyCode];
+	return this.keys[keyCode];
 };
